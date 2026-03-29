@@ -1,7 +1,6 @@
-# Skills Vault — Kevin Botelho
+# Skills
 
-Repositório central de skills para uso com **Claude Code** e **Antigravity**.  
-Funciona como um cofre: você mantém tudo aqui e puxa apenas o que precisa para cada projeto.
+Repositório central de skills para uso com Claude Code, Antigravity e Cursor.
 
 ---
 
@@ -27,7 +26,7 @@ skills/
 
 A **Master Skill** é um orquestrador global. Em vez de copiar skills manualmente para cada projeto, você usa um único comando e ela faz isso por você — puxando apenas o que é relevante para o contexto de trabalho atual.
 
-Ela funciona com **Claude Code** e **Antigravity** e é ativada exclusivamente pelo comando `/master-skill`.
+Ela é ativada exclusivamente pelo comando `/master-skill`.
 
 ---
 
@@ -36,24 +35,20 @@ Ela funciona com **Claude Code** e **Antigravity** e é ativada exclusivamente p
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/kevindbotelho/skills-claude
+git clone https://github.com/kevindbotelho/skills
 ```
 
 ### 2. Instale a Master Skill globalmente
 
-Copie o arquivo `master-skill.md` para a pasta de workflows globais do seu agente:
+Copie o arquivo `master-skill.md` para a pasta de workflows globais do seu agente. O caminho varia conforme a ferramenta — no Antigravity, por exemplo, fica em:
 
-**Antigravity:**
 ```
 C:\Users\<seu-usuario>\.gemini\antigravity\global_workflows\master-skill.md
 ```
 
-**Claude Code** (quando suportado):
-```
-~/.claude/commands/master-skill.md
-```
+No Claude Code e no Cursor, o caminho é diferente — consulte a documentação de cada ferramenta para localizar a pasta de comandos globais.
 
-> O arquivo `master-skill.md` na raiz deste repo é o backup/referência. O que funciona de verdade é a cópia no `global_workflows`.
+> O arquivo `master-skill.md` na raiz deste repo é o backup/referência. O que funciona de verdade é a cópia na pasta correta do agente.
 
 ### 3. Configure o cofre na primeira execução
 
@@ -156,13 +151,12 @@ Apaga o `.masterskill.json` e permite redefinir o caminho do cofre.
 
 ---
 
-## Créditos
+## Fontes
 
-Skills coletadas e curadas de:
-- [Anthropic](https://github.com/anthropics)
-- [Superpowers](https://github.com/superpowers)
-- [Agency Agents](https://github.com/agency-agents)
-- [Antigravity Kit](https://github.com/google/antigravity-kit)
-- [Supabase](https://github.com/supabase)
-- [Vercel](https://github.com/vercel)
-- [Stitch](https://stitch.google.com)
+- [anthropics/skills](https://github.com/anthropics/skills)
+- [obra/superpowers](https://github.com/obra/superpowers)
+- [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents)
+- [vudovn/antigravity-kit](https://github.com/vudovn/antigravity-kit)
+- [supabase/agent-skills](https://github.com/supabase/agent-skills)
+- [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills)
+- [google-labs-code/stitch-skills](https://github.com/google-labs-code/stitch-skills)
