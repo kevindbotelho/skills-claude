@@ -8,9 +8,11 @@ Repositório central de skills para uso com Claude Code, Antigravity e Cursor.
 
 ```
 skills/
+├── agency-agents/       # Skills do repositório Agency Agents (msitarzewski)
 ├── anthropics/          # Skills oficiais da Anthropic
 ├── antigravity-kit/     # Skills do Antigravity Kit
 ├── n8n/                 # Skills de automação com N8N
+├── render/              # Skills do Render
 ├── stitch/              # Skills do Google Stitch
 ├── supabase/            # Skills do Supabase
 ├── superpowers/         # Skills do repositório Superpowers
